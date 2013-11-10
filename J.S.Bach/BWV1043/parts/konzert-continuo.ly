@@ -4,9 +4,7 @@
 \include "../notes/continuo-3.ily"
 
 \paper {
-  ragged-bottom = ##t
   check-consistency = ##t
-  left-margin = 20
   scoreTitleMarkup = \pieceMarkup
 }
 \header {
@@ -16,13 +14,15 @@
   opus = \opus
   instrument = \contLN
 }
-\score {
+\score { 
+  \removeWithTag #'instrumentName
   \continuoFirstMov
   \header {
     piece = "I"
   }
 }
 \score {
+  \removeWithTag #'instrumentName
   \continuoSecondMov
   \header {
     piece = "II"
@@ -30,6 +30,7 @@
   }
 }
 \score {
+  \removeWithTag #'instrumentName
   \continuoThirdMov
   \header {
     piece = "III"

@@ -4,9 +4,7 @@
 \include "../notes/violin2-3.ily"
 
 \paper {
-  ragged-bottom = ##t
   check-consistency = ##t
-  left-margin = 20
   scoreTitleMarkup = \pieceMarkup
 }
 \header {
@@ -17,12 +15,14 @@
   instrument = \vnIILN
 }
 \score {
+  \removeWithTag #'instrumentName
   \violinTwoFirstMov
   \header {
     piece = "I"
   }
 }
 \score {
+  \removeWithTag #'instrumentName
   \violinTwoSecondMov
   \header {
     piece = "II"
@@ -30,6 +30,7 @@
   }
 }
 \score {
+  \removeWithTag #'instrumentName
   \violinTwoThirdMov
   \header {
     piece = "III"

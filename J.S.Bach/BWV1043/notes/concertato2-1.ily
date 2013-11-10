@@ -1,6 +1,8 @@
 concertatoTwoFirstMov = \new Staff \relative c' {
-  \set Staff.instrumentName = \conIILN
-  \set Staff.shortInstrumentName = \conIISN
+  \tag #'instrumentName {
+    \set Staff.instrumentName = \conIILN
+    \set Staff.shortInstrumentName = \conIISN
+  }
   \set Staff.midiInstrument = \vnMN
   \key d \minor
   \time 2/2

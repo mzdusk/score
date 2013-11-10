@@ -3,9 +3,7 @@
 \include "../notes/violin1.ily"
 
 \paper {
-  ragged-bottom = ##t
   check-consistency = ##t
-  left-margin = 20
 }
 \header {
   title = \title
@@ -14,6 +12,7 @@
   instrument = \vnILN
 }
 \score {
+  \removeWithTag #'instrumentName
   \violinOne
   \midi {
     \tempo 4 = 63

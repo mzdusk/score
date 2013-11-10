@@ -4,9 +4,7 @@
 \include "../notes/concertato2-3.ily"
 
 \paper {
-  ragged-bottom = ##t
   check-consistency = ##t
-  left-margin = 20
   scoreTitleMarkup = \pieceMarkup
 }
 \header {
@@ -17,12 +15,14 @@
   instrument = \conIILN
 }
 \score {
+  \removeWithTag #'instrumentName
   \concertatoTwoFirstMov
   \header {
     piece = "I"
   }
 }
 \score {
+  \removeWithTag #'instrumentName
   \concertatoTwoSecondMov
   \header {
     piece = "II"
@@ -30,6 +30,7 @@
   }
 }
 \score {
+  \removeWithTag #'instrumentName
   \concertatoTwoThirdMov
   \header {
     piece = "III"

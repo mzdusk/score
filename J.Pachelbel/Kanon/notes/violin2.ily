@@ -1,6 +1,8 @@
 violinTwo = \new Staff \relative c'' {
-  \set Staff.instrumentName = \vnIILN
-  \set Staff.shortInstrumentName = \vnIISN
+  \tag #'instrumentName {
+    \set Staff.instrumentName = \vnIILN
+    \set Staff.shortInstrumentName = \vnIISN
+  }
   \set Staff.midiInstrument = \vnMN
   \time 4/4
   \set Timing.beamExceptions = #'()

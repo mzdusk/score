@@ -1,6 +1,8 @@
 concertatoOneThirdMov = \new Staff \relative c'' {
-  \set Staff.instrumentName = \conILN
-  \set Staff.shortInstrumentName = \conISN
+  \tag #'instrumentName {
+    \set Staff.instrumentName = \conILN
+    \set Staff.shortInstrumentName = \conISN
+  }
   \set Staff.midiInstrument = \vnMN
   \key d \minor
   \time 3/4

@@ -1,6 +1,8 @@
 violaThirdMov = \new Staff \relative c' {
-  \set Staff.instrumentName = \vaLN
-  \set Staff.shortInstrumentName = \vaSN
+  \tag #'instrumentName {
+    \set Staff.instrumentName = \vaLN
+    \set Staff.shortInstrumentName = \vaSN
+  }
   \set Staff.midiInstrument = \vaMN
   \key d \minor
   \time 3/4

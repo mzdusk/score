@@ -2,9 +2,7 @@
 \include "../notes/cello.ily"
 
 \paper {
-  ragged-bottom = ##t
   check-consistency = ##t
-  left-margin = 20
 }
 \header {
   title = \title
@@ -13,6 +11,7 @@
   instrument = \vcLN
 }
 \score {
+  \removeWithTag #'instrumentName
   \cello
   \midi {
     \tempo 4 = 63

@@ -1,6 +1,8 @@
 continuo = \new PianoStaff <<
-  \set PianoStaff.instrumentName = \contLN
-  \set PianoStaff.shortInstrumentName = \contSN
+  \tag #'instrumentName {
+    \set PianoStaff.instrumentName = \contLN
+    \set PianoStaff.shortInstrumentName = \contSN
+  }
   \set PianoStaff.midiInstrument = \contMN
   \new Staff \relative c' {
     \key d \major

@@ -1,6 +1,8 @@
 continuoFirstMov = \new Staff \relative c {
-  \set Staff.instrumentName = \contLN
-  \set Staff.shortInstrumentName = \contSN
+  \tag #'instrumentName {
+    \set Staff.instrumentName = \contLN
+    \set Staff.shortInstrumentName = \contSN
+  }
   \set Staff.midiInstrument = \contMN
   \key d \minor
   \clef "bass"

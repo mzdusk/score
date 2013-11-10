@@ -1,6 +1,8 @@
 violinOneSecondMov = \new Staff \relative c'' {
-  \set Staff.instrumentName = \vnILN
-  \set Staff.shortInstrumentName = \vnISN
+  \tag #'instrumentName {
+    \set Staff.instrumentName = \vnILN
+    \set Staff.shortInstrumentName = \vnISN
+  }
   \set Staff.midiInstrument = \vnMN
   \key f \major
   \time 12/8
